@@ -13,7 +13,11 @@ export default function App() {
     <>
       <header>
         <p>React TV</p>
-        <ShowSelection shows={tvShows} setSelectedShow={setSelectedShow} />
+        <ShowSelection
+          shows={tvShows}
+          setSelectedShow={setSelectedShow}
+          selectedShow={selectedShow} //I know this wasn't part of the AC, but I just wanted to add .selected for the element
+        />
       </header>
       <main>
         <ShowDetails show={selectedShow} />
