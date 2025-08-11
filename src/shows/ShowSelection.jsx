@@ -11,7 +11,6 @@ export default function ShowSelection({
       {shows.map((show) => {
         return (
           <a
-            // className='show' //add .selected when clicked?
             key={show.name}
             onClick={() => setSelectedShow(show)}
             className={show === selectedShow ? "show selected" : "show"}
